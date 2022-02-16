@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <div class="img-bee">
+                <img class="bees" src="./img/bees.jpg">
+            </div>
+            <div class="input-nft">
+                <label><h3>Number of NFT's</h3></label>
+                <div class="input-bees">
+                    <div class="right-input-bees" >
+                        <div class="text-items"><label>WORKER </label></div>
+                        <div class="text-items"><label>GUARDIAN </label></div>
+                        <div class="text-items"><label>QUEEN</label></div>
+                    </div>
+                    <div class="left-input-bees" >
+                        <div class="items"><img class="plus-minus btn" id="wrk-min-btn" src="./img/minus.svg">&nbsp<input  id="wrk-field" class="nft-value"  type="text" pattern="[0-9]" required>&nbsp<img class="plus-minus btn" id="wrk-plus-btn" src="./img//add.svg"></div>
+                        <div class="items"><img class="plus-minus btn" id="gdn-min-btn" src="./img/minus.svg">&nbsp<input  id="gdn-field" class="nft-value" type="text" pattern="[0-9]" required>&nbsp<img class="plus-minus btn" id="gdn-plus-btn" src="./img//add.svg"></div>
+                        <div class="items"><img class="plus-minus btn" id="qn-min-btn" src="./img/minus.svg">&nbsp <input  id="qn-field" class="nft-value" type="text" pattern="[0-9]"required>&nbsp<img class="plus-minus btn" id="qn-plus-btn" src="./img//add.svg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-container">
+            <div class="wrapper1">
+                <div class="hprice">
+                    <label>Honey Price</label>
+                    <input class="rev-input" id="hny-price" type="number" required>
+                </div>
+                <div class="text-inves">
+                    <label>Total Investment</label> &nbsp;&nbsp;
+                    <input class="rev-input" id="total-inv"  type="text" pattern="[0-9]" required>
+                </div>
+            </div>
+            <div class="wrapper2">
+                <div class="left-inv-text">
+                    <div class="text-rev-state">
+                        <h3 style="color: rgb(248, 244, 244);" >Return of Investment</h3>
+                        <h6 style="color: rgb(131, 131, 131);">Number of days to get your initial investment back.</h6>
+                    </div>
+                </div>
+                <div class="right-inv-text">
+                    <h1 id="roi-day" >0</h1>
+                    <h4>Days</h4>
+                </div>
+            </div>
+            <div class="wrapper3">
+                <div class="left-rev" >
+                    <div class="text-rev"><label>Daily revenue</label></div>
+                    <div class="text-rev"><label>Monthly revenue</label></div>
+                    <div class="text-rev"><label>Yearly revenue</label></div>
+                </div>
+                <div class="right-rev" >
+                    <div class="rev-items"><input id="daily-rev-field" class="rev-input" type="text" disabled > </div>
+                    <div class="rev-items"><input id="mont-rev-field" class="rev-input" type="text" disabled> </div>
+                    <div class="rev-items"><input id="year-rev-field" class="rev-input" type="text" disabled> </div>
+                </div>
+            </div>
+            <div class="subBtn">
+                <button id="subBtn" type="submit">Calculate</button>
+            </div>
+        </div>
+    </div>  
+<script src="./script.js"></script>
+</body>
+</html>
