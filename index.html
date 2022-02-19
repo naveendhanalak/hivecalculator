@@ -20,9 +20,9 @@
                         <div class="text-items"><label>QUEEN</label></div>
                     </div>
                     <div class="left-input-bees" >
-                        <div class="items"><img class="plus-minus btn" id="wrk-min-btn" src="./img/minus.svg">&nbsp<input  id="wrk-field" class="nft-value"  type="text" pattern="[0-9]" required>&nbsp<img class="plus-minus btn" id="wrk-plus-btn" src="./img//add.svg"></div>
-                        <div class="items"><img class="plus-minus btn" id="gdn-min-btn" src="./img/minus.svg">&nbsp<input  id="gdn-field" class="nft-value" type="text" pattern="[0-9]" required>&nbsp<img class="plus-minus btn" id="gdn-plus-btn" src="./img//add.svg"></div>
-                        <div class="items"><img class="plus-minus btn" id="qn-min-btn" src="./img/minus.svg">&nbsp <input  id="qn-field" class="nft-value" type="text" pattern="[0-9]"required>&nbsp<img class="plus-minus btn" id="qn-plus-btn" src="./img//add.svg"></div>
+                        <div class="items"><img class="plus-minus btn" id="wrk-min-btn" onclick="calc()" src="./img/minus.svg">&nbsp<input onkeyup="calc()"  id="wrk-field" class="nft-value"  type="text" pattern="[0-9]" required>&nbsp<img class="plus-minus btn" onclick="calc()" id="wrk-plus-btn" src="./img//add.svg"></div>
+                        <div class="items"><img class="plus-minus btn" id="gdn-min-btn" onclick="calc()" src="./img/minus.svg">&nbsp<input onkeyup="calc()" id="gdn-field" class="nft-value" type="text" pattern="[0-9]" required>&nbsp<img class="plus-minus btn" onclick="calc()" id="gdn-plus-btn" src="./img//add.svg"></div>
+                        <div class="items"><img class="plus-minus btn" id="qn-min-btn" onclick="calc()" src="./img/minus.svg">&nbsp <input onkeyup="calc()" id="qn-field" class="nft-value" type="text" pattern="[0-9]"required>&nbsp<img class="plus-minus btn" onclick="calc()" id="qn-plus-btn" src="./img//add.svg"></div>
                     </div>
                 </div>
             </div>
@@ -30,12 +30,12 @@
         <div class="right-container">
             <div class="wrapper1">
                 <div class="hprice">
-                    <label>Honey Price</label>
-                    <input class="rev-input" id="hny-price" type="number" required>
+                    <label>Honey Price</label><i class="dollar" >$</i>
+                    <input class="rev-input" onkeyup="calc()" id="hny-price" type="number" required>
                 </div>
                 <div class="text-inves">
-                    <label>Total Investment</label> &nbsp;&nbsp;
-                    <input class="rev-input" id="total-inv"  type="text" pattern="[0-9]" required>
+                    <label>Total Investment</label> &nbsp;&nbsp;<i class="dollar" >$</i>
+                    <input class="rev-input" onkeyup="calc()" id="total-inv"  type="text" pattern="[0-9]" required>
                 </div>
             </div>
             <div class="wrapper2">
@@ -57,13 +57,10 @@
                     <div class="text-rev"><label>Yearly revenue</label></div>
                 </div>
                 <div class="right-rev" >
-                    <div class="rev-items"><input id="daily-rev-field" class="rev-input" type="text" disabled > </div>
-                    <div class="rev-items"><input id="mont-rev-field" class="rev-input" type="text" disabled> </div>
-                    <div class="rev-items"><input id="year-rev-field" class="rev-input" type="text" disabled> </div>
+                    <div class="rev-items"><i class="dollar" >$</i><input id="daily-rev-field" class="rev-input" type="text" disabled > </div>
+                    <div class="rev-items"><i class="dollar" >$</i><input id="mont-rev-field" class="rev-input" type="text" disabled> </div>
+                    <div class="rev-items"><i class="dollar" >$</i><input id="year-rev-field" class="rev-input" type="text" disabled> </div>
                 </div>
-            </div>
-            <div class="subBtn">
-                <button id="subBtn" type="submit">Calculate</button>
             </div>
         </div>
     </div>  

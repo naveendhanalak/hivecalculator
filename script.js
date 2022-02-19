@@ -20,7 +20,7 @@ let subBtn = document.getElementById('subBtn');
 
 wrkMinBtn.addEventListener('click',(e)=>{
     e.preventDefault();
-    if(wrkField.value >0 || 0 ){
+    if(wrkField.value > 0 || 0 ){
         wrkField.value -= 1;
     }
     else{
@@ -60,9 +60,8 @@ qnPlusBtn.addEventListener('click',(e)=>{
 })
 
 
-
-subBtn.addEventListener('click',()=>{
-    console.log('Onchange')
+function calc(){
+    console.log('Hello from clg function');
     let dailyRewad = 0.05*(wrkField.value) + 0.1*(gdnField.value) + 0.2*(qnField.value);
     
     dailyRevField.value = ((dailyRewad)*(hnyPriceField.value)).toFixed(2);
@@ -72,5 +71,4 @@ subBtn.addEventListener('click',()=>{
     yearRevField.value = (365*(dailyRevField.value)).toFixed(2);
 
     roiDaysField.innerText = Math.floor((totalInvField.value)/(dailyRevField.value) +1) ;
-    
-})
+}

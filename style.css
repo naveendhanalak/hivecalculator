@@ -125,6 +125,17 @@ body {
   margin: 10px;
 }
 
+.dollar{
+  position: relative;
+  margin-left: 19px;
+  color: black;
+  font-size: 18px;
+  margin-right: -19px;
+  border-radius: 3px;
+  padding-right: -2px;
+  background-color: aliceblue;
+}
+
 .rev-input {
   width: 5.5rem;
   height: 1.8rem;
@@ -171,6 +182,7 @@ body {
   height: 85%;
   margin: 20px;
   padding-top: 10px;
+  overflow:hidden;
 }
 
 .wrapper3 {
@@ -216,13 +228,12 @@ body {
     height: 100%;
     border-radius: 10px;
     margin-bottom: 10px;
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.15);
+    /* box-shadow: 0 5px 10px rgba(255, 255, 255, 0.15); */
   }
   .right-container {
     width: 100%;
     height: 100%;
     margin-top: 20px;
-    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.15);
     border: none;
   }
   
